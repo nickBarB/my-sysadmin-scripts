@@ -1,0 +1,37 @@
+
+--- 2026-10-08 12:00:00 ---
+
+Оперативная память:
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       2.7Gi       1.4Gi        29Mi       3.9Gi       5.0Gi
+Swap:          8.0Gi       783Mi       7.2Gi
+
+Дисковое пространство:
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           1.6G  2.2M  1.6G   1% /run
+/dev/sda1        77G   35G   42G  46% /
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+tmpfs           3.9G     0  3.9G   0% /tmp
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+/dev/sda13      989M  150M  772M  17% /boot
+/dev/sda15      105M  6.3M   99M   7% /boot/efi
+overlay          77G   35G   42G  46% /var/lib/docker/rootfs/overlayfs/1ad96e36db6cc41b30a06f54b9542b791a5e024212f5686cbe4ab87ba281e81d
+overlay          77G   35G   42G  46% /var/lib/docker/rootfs/overlayfs/504a6b0119c8148edd29d42b612c3aa29558f078436e9bad6a70c62d3e9c4584
+none            1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none            1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+overlay          77G   35G   42G  46% /var/lib/docker/rootfs/overlayfs/3a08d5464407b2368150a75127c67ba63a268166d0fa3e321efdbc6bbaa288fb
+overlay          77G   35G   42G  46% /var/lib/docker/rootfs/overlayfs/0e10f9eb2f4c1b8880ce4e9b38bff7605fbbfcb8ada2579303db598ca2601ae0
+overlay          77G   35G   42G  46% /var/lib/docker/rootfs/overlayfs/d55bb4823c6bea3b1d1d5464ee90b2d5b4621e42172ba7c8feadd23fd8dc9baf
+overlay          77G   35G   42G  46% /var/lib/docker/rootfs/overlayfs/e0f47a3a1cd0be178421b6e32605f342513ba917905e8c010febfb19308da3ff
+overlay          77G   35G   42G  46% /var/lib/docker/rootfs/overlayfs/4545e71014074af7f6f4753d9b70a77a1b17e46ecf631282ca3da33ce196840d
+overlay          77G   35G   42G  46% /var/lib/docker/rootfs/overlayfs/fad46ccbce1bac1352787a86310d7aa86fee1b2e2d9b28a556a964ebd0b72b60
+overlay          77G   35G   42G  46% /var/lib/docker/rootfs/overlayfs/d97aaa2effbd90fbafd2578842fa55aac3af1fcc7bada472e25a2e0b10ff056a
+overlay          77G   35G   42G  46% /var/lib/docker/rootfs/overlayfs/48e8f3947dd019f7a85a0411cc5d4bb65463ea7e89211932f3aa66fb447b9290
+overlay          77G   35G   42G  46% /var/lib/docker/rootfs/overlayfs/9a65b84c60d04fcb2ab5f79f59d162e76b94b8c0789c48ddd3635de9b941a251
+tmpfs           794M  4.0K  794M   1% /run/user/0
+overlay          77G   35G   42G  46% /var/lib/docker/rootfs/overlayfs/438d5c7e0aec369a7cd3cefb96b64445cc81851555c3fce59ee686bd1b2e2666
+
+Время работы и нагрузка:
+ 16:07:03 up 28 days,  2:25,  2 users,  load average: 0.28, 0.38, 0.37
