@@ -3,7 +3,7 @@ set -euo pipefail
 
 INTERVAL=10
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-LOG_FILE="$SCRIPT_DIR/monitor.log"
+LOG_FILE="${LOG_FILE:-$SCRIPT_DIR/monitor.log}"
 
 while true; do
     {

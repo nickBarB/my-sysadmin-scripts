@@ -1,0 +1,12 @@
+[Unit]
+Description=Restore resource monitoring loop RAID and LVM storage
+After=local-fs.target
+Before=edu-resource-monitor.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/edu-monitor-storage-restore
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

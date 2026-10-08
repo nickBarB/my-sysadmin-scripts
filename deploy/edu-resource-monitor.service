@@ -1,0 +1,16 @@
+[Unit]
+Description=Resource monitoring HTTP service
+Requires=docker.service edu-monitor-storage.service
+After=docker.service edu-monitor-storage.service
+
+[Service]
+Type=simple
+ExecStartPre=/usr/bin/mountpoint -q /mnt/edu-monitor-logs
+ExecStart=/usr/bin/docker start -a edu-resource-monitor
+ExecStop=/usr/bin/docker stop -t 20 edu-resource-monitor
+Restart=on-failure
+RestartSec=5s
+TimeoutStopSec=30s
+
+[Install]
+WantedBy=multi-user.target

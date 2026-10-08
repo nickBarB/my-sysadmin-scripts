@@ -1,0 +1,29 @@
+name: edu-resource-monitor
+
+services:
+  monitor:
+    build: .
+    image: edu-resource-monitor:latest
+    container_name: edu-resource-monitor
+    environment:
+      LOG_FILE: /var/www/monitor.log
+    ports:
+      - "127.0.0.1:${APP_PORT:-18080}:8080"
+    volumes:
+      - type: bind
+        source: /mnt/edu-monitor-logs/my-app
+        target: /var/www
+        bind:
+          create_host_path: false
+    restart: "no"
+    stop_grace_period: 20s
+    healthcheck:
+      test:
+        - CMD
+        - python3
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/monitor.log', timeout=3).read(1)"
+      interval: 15s
+      timeout: 5s
+      start_period: 15s
+      retries: 3

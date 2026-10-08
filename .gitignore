@@ -1,2 +1,5 @@
-.idea
 monitor.log
+.env
+*.img
+*.key
+.idea

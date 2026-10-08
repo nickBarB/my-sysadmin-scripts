@@ -1,0 +1,6 @@
+.git
+.env
+monitor.log
+*.img
+*.key
+deploy
